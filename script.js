@@ -17,13 +17,10 @@ function PrintDeveloperbyMap() {
 
 function PrintDeveloperbyForEach() {
   //Write your code here , just console.log
-  let dev=arr.filter(function(emp){
+   let dev=arr.filter(function(emp){
     return emp.profession==="developer";
-  }).map(function(emp){
+  }).forEach(function(emp){
     console.log(emp);
-  })
-  dev.forEach(function(e2){
-    console.log(e2);
   })
 }
 
