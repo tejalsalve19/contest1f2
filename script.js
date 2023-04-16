@@ -17,7 +17,14 @@ function PrintDeveloperbyMap() {
 
 function PrintDeveloperbyForEach() {
   //Write your code here , just console.log
-  console.log(arr);
+  let dev=arr.filter(function(emp){
+    return emp.profession==="developer";
+  }).map(function(emp){
+    console.log(emp);
+  })
+  dev.forEach(function(e2){
+    console.log(e2);
+  })
 }
 
 function addData() {
