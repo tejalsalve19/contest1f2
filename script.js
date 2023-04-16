@@ -8,7 +8,11 @@ let arr = [
 
 function PrintDeveloperbyMap() {
   //Write your code here , just console.log
-  console.log(arr);
+   let dev=arr.filter(function(emp){
+    return emp.profession==="developer";
+  }).map(function(emp){
+    console.log(emp);
+  })
 }
 
 function PrintDeveloperbyForEach() {
